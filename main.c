@@ -117,19 +117,15 @@ typedef struct {
   profile_init profileInit;
 } profile;
 
-profile profiles[12] = {
-    { red, {0, 0, 0, 0}, NULL, NULL },
-    { green, {0, 0, 0, 0}, NULL, NULL },
+profile profiles[5] = {
     { blue, {0, 0, 0, 0}, NULL, NULL },
-    { rainbowHorizontal, {0, 0, 0, 0}, NULL, NULL },
+    { miamiNights, {0, 0, 0, 0}, NULL, NULL },
     { rainbowVertical, {0, 0, 0, 0}, NULL, NULL },
-    { animatedRainbowVertical, {20, 10, 8, 5}, NULL, NULL },
-    { animatedRainbowFlow, {12, 6, 3, 1}, NULL, NULL },
     { animatedRainbowWaterfall, {12, 6, 3, 1}, NULL, NULL },
-    { animatedBreathing, {12, 6, 3, 1}, NULL, NULL },
-    { animatedWave, {12, 6, 3, 1}, NULL, NULL },
-    { animatedSpectrum, {12, 6, 3, 1}, NULL, NULL },
-    { reactiveFade, {12, 6, 3, 1}, reactiveFadeKeypress, reactiveFadeInit },
+    {reactiveFade,
+    {8000, 6000, 4000, 2000},
+    reactiveFadeKeypress,
+    reactiveFadeInit},
 };
 
 static uint8_t currentProfile = 0;
