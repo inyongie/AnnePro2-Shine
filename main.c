@@ -471,7 +471,7 @@ int main(void) {
       // chosen to randomize the distribution of set iterations and such that
       // uint8_t with wrap-around would not repeat until exhausting all unique
       // numbers.
-      rowPWMCount += 63;
+      rowPWMCount += 67;
 
       for (size_t col = 0; col < NUM_COLUMN; col++) {
 
