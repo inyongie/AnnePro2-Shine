@@ -95,11 +95,10 @@ typedef struct {
   profile_init profileInit;
 } profile;
 
-profile profiles[5] = {
+profile profiles[4] = {
     {blue, {0, 0, 0, 0}, NULL, NULL},
+    {green, {0, 0, 0, 0}, NULL, NULL},
     {miamiNights, {0, 0, 0, 0}, NULL, NULL},
-    {rainbowVertical, {0, 0, 0, 0}, NULL, NULL},
-    {animatedRainbowWaterfall, {1600, 1200, 800, 400}, NULL, NULL},
     {reactiveFade,
      {400, 1600, 1200, 800},
      reactiveFadeKeypress,
